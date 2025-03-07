@@ -29,7 +29,7 @@ body {
 
 
 @font-face {
-    src: url(/Font/Poppins-Regular.ttf);
+    src: url(./Font/Poppins-Regular.ttf);
     font-family: Poppins-Regular;
 }
 
