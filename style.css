@@ -1,0 +1,1050 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    background: hsl(235, 11%, 38%);
+    display: flex;
+    flex-direction: column;
+    font-family: Poppins-Regular;
+}
+
+::-webkit-scrollbar {
+    width: auto;
+}
+
+::-webkit-scrollbar-track {
+    background: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: hsl(240, 100%, 52%);
+    border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: hsl(240, 85%, 60%);
+}
+
+
+
+@font-face {
+    src: url(/Font/Poppins-Regular.ttf);
+    font-family: Poppins-Regular;
+}
+
+.header {
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    height: 100px;
+    background: #000000;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header a {
+    filter: drop-shadow(0px 0px 10px #0026ff);
+    margin-left: 30px;
+    transition: 1000ms ease;
+    cursor: default;
+}
+
+.header a:hover {
+    transform: rotate(360deg);
+    filter: drop-shadow(0px 0px 10px #ffe600);
+}
+
+.header b:first-child:hover {
+    color: #ffbb00ee;
+    filter: drop-shadow(0px 0px 10px #ff8800);
+}
+
+.header b:hover {
+    color: #0026ffee;
+    filter: drop-shadow(0px 0px 10px #0026ff);    
+    transition: 300ms;    
+}
+
+@keyframes shake {
+    0% {rotate: 0deg;}
+    33% {rotate: -45deg;}
+    63% {rotate: 45deg;}
+    100% {rotate: 0deg;}
+}
+.bat-hitam:hover {
+    animation: shake 2s ease;
+    filter: drop-shadow(0px 0px 10px #accaae);
+    
+}
+
+@keyframes turn-around {
+    100% {rotate: 360deg;}
+}
+
+.blok-merah:hover {
+    filter: drop-shadow(0px 0px 10px #ff0000);
+    animation: turn-around 2.5s ease;
+}
+.ben-hitam:hover{
+    filter:drop-shadow(0px 0px 10px #00ff00);
+    animation: turn-around 1s ease-in-out;
+}
+
+@keyframes nod {
+    0% {transform: translate(0px, 0px);}
+    50% {transform: translate(0px, 70px);}
+    100% {transform: translate(0px, 0px);}
+}
+
+.daredevil:hover {
+    animation: nod 1s ease;
+}
+
+.S {
+    padding-left: 45px;
+    font-size: 70px;
+    transform: translateY(-10px);
+}
+
+.B {
+    font-size: 45px;
+    transform: translateY(-1px);
+    padding-left: 20px;
+
+}
+
+.made {
+    color: #ffffff;
+    margin-left: 50px;
+    cursor: default;
+}
+
+.header h1 {
+    color: #ffffff;
+    filter: drop-shadow(0px 0px 2px #ffffff);
+    letter-spacing: 4.5px;
+    cursor: default;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    background: black;
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: default;
+}
+
+footer h1 {
+    color: #ffffff;
+    letter-spacing: 2.5px;
+    font-weight: 550;
+}
+
+footer .loader {
+    color: rgb(254, 252, 252);
+    font-weight: 600;
+    font-size: 30px;
+    box-sizing: content-box;
+    height: 45px;
+    padding: 10px 10px;
+    display: flex;
+    border-radius: 8px;
+    margin-left: 40px;
+    letter-spacing: 3.5px;
+    border: 3px solid white;
+}
+
+.words {
+    overflow: hidden;
+}
+
+.word {
+    display: block;
+    height: 100%;
+    padding-left: 10px;
+    color: rgb(51, 255, 0);
+    animation: animate 4s ease-in-out infinite;
+}
+
+.word:nth-child(2) {
+    color: rgb(255, 187, 0);
+}
+
+.word:nth-child(3) {
+    color: rgb(0, 38, 255);
+}
+
+.word:nth-child(4) {
+    color: #ff0000;
+}
+
+@keyframes animate {
+    10% {
+        transform: translateY(-5%);
+    }
+
+    20% {
+        transform: translateY(-0%);
+    }
+
+    30% {
+        transform: translateY(-105%);
+    }
+    
+    40% {
+        transform: translateY(-100%);
+    }
+
+    50% {
+        transform: translateY(-205%);
+    }
+    
+    60% {
+        transform: translateY(-200%);
+    }
+
+    70% {
+        transform: translateY(-305%);
+    }
+    
+    80% {
+        transform: translateY(-300%);
+    }
+
+    90% {
+        transform: translateY(-405%);
+    }
+    
+    100% {
+        transform: translateY(-400%);
+    }
+}
+
+.place-texts {
+    height: auto;
+    width: 200px;
+    /* border: 2px solid white; */
+    margin-left: 150px;
+    margin-right: auto;
+    padding-left: 15px;
+    overflow: hidden;
+}
+
+.texts {
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid aqua; */
+    animation: geser-ke-kiri 7s ease-in-out infinite;
+    width: 570px;
+}
+
+.text {
+    display: block;
+    color: white;
+    padding-left: 5px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 30px;
+    letter-spacing: 3.5px;
+    font-weight: 600;
+    /* border: 2px solid purple; */
+}
+
+@keyframes geser-ke-kiri {
+    0% {transform: translateX(2%);}
+    25% {transform: translateX(-39%);}
+    50% {transform: translateX(-80%);}
+    75% {transform: translateX(-124%);}
+    100% {transform: translateX(-166%);} 
+}
+
+/*------------------------------------------------------------------*/
+.layar-1 {
+    display: flex;
+    flex-direction: row;
+    background: #3a5550;
+    border: 5px solid #171818;
+    margin-top: 50px;
+    padding-top: 120px;
+    padding-bottom: 380px;
+    overflow: hidden;  
+}
+
+.blok-merah {
+    width: 300px;
+    height: 300px;
+    background: #bd0606;
+    border-radius: 100%;
+    position: relative;
+    top: 30%;
+    left: 40%;
+}
+
+.blok-hitam {
+    width: 250px;
+    height: 250px;
+    background: #000000;
+    border-radius: 100%;
+    position: absolute;
+    top: 8%;
+    left: 9.2%;
+}
+
+.persegi-merah {
+    width: 40px;
+    height: 250px;
+    background: #bd0606;
+    position: absolute;
+    left: 44.3%;
+    top: 8%;
+}
+
+.persegi-putih-kiri {
+    width: 50px;
+    height: 26px;
+    background: white;
+    position: absolute;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    top: 41%;
+    left: 16%;
+    rotate: 35deg;
+}
+
+.persegi-putih-kanan {
+    width: 50px;
+    height: 26px;
+    background: white;
+    position: absolute;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    top: 41%;
+    right: 16%;
+    rotate: -35deg;
+
+}
+
+.bat-hitam {
+    width: 300px;
+    height: 300px;
+    background: #000000;
+    border-radius: 100%;
+    position: relative;
+    top: 30%;
+    right: 20%;
+}
+
+.bat-putih {
+    width: 200px;
+    height: 100px;
+    background: #ffffff;
+    border-bottom-left-radius: 180px;
+    border-bottom-right-radius: 180px;
+    position: relative;
+    top: 58%;
+    left: 16.8%;
+}
+
+.bat-grey {
+    background: #000000;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 44%;
+    top: 51%;
+    rotate: 45deg;
+}
+
+.bat-mata-kiri {
+    width: 50px;
+    height: 26px;
+    background: white;
+    position: absolute;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    top: 40%;
+    left: 19%;
+    rotate: 35deg;
+}
+
+.bat-mata-kanan {
+    width: 50px;
+    height: 26px;
+    background: white;
+    position: absolute;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    top: 40%;
+    right: 19%;
+    rotate: -35deg;
+
+}
+
+.bat-tanduk-kiri {
+    background: #000000;
+    width: 100px;
+    height: 140px;
+    clip-path: polygon(100% 0, 100% 100%, 0 100%);
+    outline: none;
+    position: absolute;
+    top: -20%;
+    left: -9%;
+    rotate: -29deg;
+}
+
+.bat-tanduk-kanan {
+    background: rgb(0, 0, 0);
+    width: 100px;
+    height: 140px;
+    clip-path: polygon(0% 0%, 100% 100%, 0 100%);
+    outline: none;
+    position: absolute;
+    top: -20%;
+    left: 76%;
+    rotate: 29deg;
+}
+
+
+.ben-hitam {
+    width: 300px;
+    height: 300px;
+    background: #000000;
+    border-radius: 100%;
+    position: relative;
+    top: 30%;
+    left: 30%;
+}
+
+.ben-place-hijau {
+    width: 90px;
+    height: fit-content;
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    transform: translate(52.5px, -50.5px);
+}
+
+.ben-hijau {
+    background: #00ff00;
+    width: 190px;
+    height: 190px;
+    border-top-right-radius: 100%;
+    rotate: -45deg;
+}
+
+.ben-hijau:last-child {
+    rotate: 135deg;
+    margin-top: 15px;
+
+}
+
+/* .ben-hijau-atas {
+    background: #00ff00;
+    width: 170px;
+    height: 170px;
+    border-top-right-radius: 100%;
+    position: absolute;
+    top: -12.5%;
+    right: 20.9%;
+    rotate: -45deg;
+}
+
+.ben-hijau-bawah {
+    background: #00ff00;
+    width: 170px;
+    height: 170px;
+    border-top-right-radius: 100%;
+    position: absolute;
+    bottom: -12.5%;
+    right: 20.9%;
+    rotate: 135deg;
+} */
+
+.layar-2 {
+    display: flex;
+    flex-direction: row;
+    background: #3a5550;
+    border: 5px solid #171818;
+    margin-top: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.avatar-muka {
+    background: #f1db77;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-left: 30px;
+    margin-right: 195px;
+}
+
+.panah-biru {
+    width: 90.6px;
+    height: 90px;
+    background: aqua;
+    clip-path: ellipse(81.5% 45% at 50% 50%);
+    position: relative;
+    left: 35.5%;
+    top: -2%;
+}
+
+.panah-biru-segitiga {
+    width: 140px;
+    height: 120px;
+    background: aqua;
+    clip-path: polygon(0 0, 100% 0, 50% 49%);
+    position: relative;
+    left: 26.9%;
+    top: -6%;
+}
+
+.avatar-mata-kiri {
+    width: 50px;
+    height: 26px;
+    background: rgb(255, 255, 255);
+    position: relative;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    top: -25%;
+    left: 16.5%;
+    rotate: 35deg;
+    border: 1px solid#ffffff;
+    box-shadow: 0px 0px 30px rgb(255, 255, 255);
+}
+
+.avatar-mata-kanan {
+    width: 50px;
+    height: 26px;
+    background: white;
+    position: relative;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    top: -33.8%;
+    left: 66.8%;
+    rotate: -35deg;
+    border: 1px solid#ffffff;
+    box-shadow: 0px 0px 30px rgb(255, 255, 255);
+
+}
+
+.wolverine {
+    background: #ffee00;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-right: 180px;
+}
+
+.wolverine-muka {
+    width: 200px;
+    height: 100px;
+    background: #ffffff;
+    border-bottom-left-radius: 180px;
+    border-bottom-right-radius: 180px;
+    position: relative;
+    top: 58%;
+    left: 17%;
+}
+
+.wolverine-hidung {
+    background: #ffee00;
+    width: 40px;
+    height: 40px;
+    rotate: 45deg;
+    position: relative;
+    top: 17.5%;
+    left: 44.5%;
+}
+
+.alis-kiri {
+    width: 200px;
+    height: 200px;
+    background: #000000;
+    clip-path: polygon(91% 85%, 36% 64%, 26% 5%, 77% 15%, 100% 51%);
+    position: relative;
+    top: -47.3%;
+    left: -19%;
+}
+
+.alis-kanan {
+    width: 200px;
+    height: 200px;
+    flex-direction: column-reverse;
+    background: #000000;
+    clip-path: polygon(91% 85%, 36% 64%, 26% 5%, 77% 15%, 100% 51%);
+    position: relative;
+    top: -113.9%;
+    left: 54%;
+    transform: scaleX(-1);
+}
+
+.wolverine-mata-kiri {
+    width: 50px;
+    height: 26px;
+    background: white;
+    position: relative;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    rotate: 35deg;
+    bottom: 145%;
+    left: 20%;
+}
+
+.wolverine-mata-kanan {
+    width: 50px;
+    height: 26px;
+    background: white;
+    position: relative;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    bottom: 153%;
+    left: 64%;
+    rotate: -35deg;
+}
+
+.spiderman {
+    background: #ff0000;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.dot {
+    width: 30px;
+    height: 30px;
+    background: #000000;
+    border-radius: 50%;
+    position: relative;
+    left: 45.1%;
+    top: 51%;
+}
+
+.garis-hitam-1 {
+    width: 15px;
+    height: 300px;
+    background: #000000;
+    position: relative;
+    left: 47.5%;
+    top: -10.5%;
+}
+
+.garis-hitam-2 {
+    width: 15px;
+    height: 300px;
+    background: #000000;
+    position: relative;
+    top: -109%;
+    left: 45%;
+    rotate: -25deg;
+}
+
+.garis-hitam-3 {
+    width: 15px;
+    height: 300px;
+    background: #000000;
+    position: relative;
+    top: -209%;
+    left: 50.3%;
+    rotate: 25deg;
+}
+
+.garis-hitam-4 {
+    width: 15px;
+    height: 300px;
+    background: #000000;
+    position: relative;
+    top: -350%;
+    left: 45%;
+    rotate: -45deg;
+}
+
+.garis-hitam-5 {
+    width: 15px;
+    height: 300px;
+    background: #000000;
+    position: relative;
+    top: -450%;
+    left: 50%;
+    rotate: 45deg;
+}
+
+.garis-hitam-6 {
+    width: 15px;
+    height: 300px;
+    background: #000000;
+    position: relative;
+    top: -550%;
+    left: 48%;
+    rotate: 75deg;
+}
+
+.garis-hitam-7 {
+    width: 15px;
+    height: 300px;
+    background: #000000;
+    position: relative;
+    top: -650%;
+    left: 47.8%;
+    rotate: -75deg;
+}
+
+.spiderman-mata-kiri {
+    width: 80px;
+    height: 42px;
+    background: white;
+    border: 10px solid black;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    rotate: 35deg;
+    position: relative;
+    top: -268%;
+    left: 12%;
+    z-index: 100;
+}
+
+
+
+.spiderman-mata-kanan {
+    width: 80px;
+    height: 42px;
+    background: white;
+    border: 10px solid black;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    rotate: 35deg;
+    position: relative;
+    top: -288%;
+    left: 55%;
+    rotate: -35deg;
+    z-index: 100;
+}
+
+.layar-3 {
+    display: flex;
+    flex-direction: row;
+    background: #3a5550;
+    border: 5px solid #171818;
+    margin-top: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.daredevil {
+    width: 300px;
+    height: 300px;
+    background: #b90000;
+    border-radius: 50%;
+    margin-left: 30px;
+    margin-right: 195px;
+
+}
+
+.daredevil-mulut {
+    width: 200px;
+    height: 100px;
+    background: #ffffff;
+    border-bottom-left-radius: 180px;
+    border-bottom-right-radius: 180px;
+    transform: translate(50px, 175px);
+}
+
+.daredevil-hidung {
+    background: #b90000;
+    width: 40px;
+    height: 40px;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    transform: translate(130px, 53.5px) scale(1.5);
+}
+
+.daredevil-tanduk-kiri, .daredevil-tanduk-kanan {
+    background: #970101;
+}
+
+.daredevil-tanduk-kiri {
+    width: 200px;
+    height: 200px;
+    clip-path: polygon(0 0, 0 68%, 44% 48%);
+    transform: translate(40px, -170px);
+}
+
+.daredevil-tanduk-kanan {
+    width: 200px;
+    height: 200px;
+    clip-path: polygon(0 0, 0 68%, 44% 48%);
+    transform: translate(65px, -370px) scaleX(-1);
+}
+
+.daredevil-mata-kiri {
+    transform: translate(70px, -420px);
+}
+
+.daredevil-bola-mata-kiri {
+    width: 50px;
+    height: 25px;
+    background: rgb(0, 0, 0);
+    border-radius: 0 0 100px 100px;
+    transform: rotate(35deg);
+}
+
+.daredevil-mata-kanan {
+    transform: translate(180px, -445px);
+}
+
+.daredevil-bola-mata-kanan {
+    width: 50px;
+    height: 25px;
+    background: rgb(0, 0, 0);
+    border-radius: 0 0 100px 100px;
+    transform: rotate(-35deg);
+}
+
+.hellokitty {
+    width: 300px;
+    height: 300px;
+    background: #ffffff;
+    border-radius: 50%;
+    outline: 3px solid black;
+}
+
+.kuping-kiri {
+    width: 150px;
+    height: 150px;
+    background: rgb(247, 232, 206);
+    clip-path: polygon(12% 9%, 67% 31%, 76% 61%, 12% 96%);
+    transform: translate(0px, -50px);
+
+}
+
+.kuping-kanan {
+    width: 150px;
+    height: 150px;
+    background: rgb(247, 232, 206);
+    clip-path: polygon(12% 9%, 67% 31%, 76% 61%, 12% 96%);
+    transform: translate(150px, -196px) scaleX(-1);
+}
+
+.place-pita {
+    transform: translate(120px, -330px);
+    height: 230px;
+}
+
+.pita-merah {
+    width: 200px;
+    height: 200px;
+    background: rgb(255, 0, 0);
+    clip-path: polygon(52% 41%, 83% 12%, 100% 43%, 94% 78%, 63% 55%, 41% 55%, 6% 78%, 0% 43%, 17% 12%);
+    rotate: 18deg;
+}
+
+.hellokitty-mata-kiri {
+    width: 37px;
+    height: 37px;
+    background: black;
+    clip-path: ellipse(33% 50% at 50% 50%);
+    transform: translate(50px, -383px);    
+}
+
+.hellokitty-mata-kanan {
+    width: 37px;
+    height: 37px;
+    background: black;
+    clip-path: ellipse(33% 50% at 50% 50%);
+    transform: translate(215px, -420px); 
+}
+
+@keyframes blink {
+    0% {clip-path: ellipse(33% 50% at 50% 50%);}
+    50% {clip-path: ellipse(33% 0% at 50% 50%);}
+    100% {clip-path: ellipse(33% 50% at 50% 50%);}
+}
+
+@keyframes emot {
+    0% {rotate: 0deg;}
+    50% {rotate: 20deg;}
+    100% {rotate: 0deg;}
+}
+
+.hellokitty:hover {
+    filter:drop-shadow(0px 0px 10px #ff008c);
+    animation: emot 1s ease;
+}
+
+.hellokitty:hover > .hellokitty-mata-kanan{
+    animation: blink 800ms ease;
+}
+
+
+.hellokitty-hidung {
+    width: 38px;
+    height: 20px;
+    background: rgb(255, 255, 22);
+    outline: 2px solid black;
+    border-radius: 50%;
+    transform: translate(135px, -420px);
+}
+
+.hellokitty-place-kumis-1 {
+    transform: translate(-60px, -470px);
+}
+
+.hellokitty-kumis-1 {
+    width: 100px;
+    height: 10px;
+    background: black;
+    border-radius: 30%;
+    rotate: 20deg;
+}
+
+.hellokitty-place-kumis-2 {
+    transform: translate(-65px, -450px);
+}
+
+.hellokitty-kumis-2 {
+    width: 100px;
+    height: 10px;
+    border-radius: 30%;
+    background: black;
+}
+
+.hellokitty-place-kumis-3 {
+    transform: translate(-60px, -430px);
+}
+
+.hellokitty-kumis-3 {
+    width: 100px;
+    height: 10px;
+    border-radius: 30%;
+    background: black;
+    rotate: -20deg;
+}
+
+.hellokitty-place-kumis-4 {
+    transform: translate(265px, -505px);
+}
+
+.hellokitty-kumis-4 {
+    width: 100px;
+    height: 10px;
+    border-radius: 30%;
+    background: black;
+    rotate: -20deg;
+}
+
+.hellokitty-place-kumis-5 {
+    transform: translate(270px, -486px);
+}
+
+.hellokitty-kumis-5 {
+    width: 100px;
+    height: 10px;
+    border-radius: 30%;
+    background: black;
+}
+
+.hellokitty-place-kumis-6 {
+    transform: translate(265px, -466px);
+}
+
+.hellokitty-kumis-6 {
+    width: 100px;
+    height: 10px;
+    border-radius: 30%;
+    background: black;
+    rotate: 20deg;
+}
+
+.ultraman {
+    width: 300px;
+    height: 300px;
+    background: hsl(0, 11%, 95%);
+    border-radius: 50%;
+    margin-right: 30px;
+    margin-left: 195px;
+}
+
+.ultraman-place-mata {
+    width: 300px;
+    height: auto;
+    background: none;
+    /* border: 2px solid cyan; */
+    display: flex;
+    justify-content: space-around;
+    transform: translateY(80px);
+}
+
+.ultraman-mata {
+    width: 100px;
+    height: 100px;
+    background: hsl(60, 96%, 52%);
+    clip-path: ellipse(33% 50% at 50% 50%);
+    rotate: -40deg;
+}
+
+.ultraman-mata:last-child{
+    rotate: 40deg;
+}
+
+.ultraman:hover {
+    filter:drop-shadow(0px 0px 10px hsl(0, 0%, 100%));
+}
+
+.ultraman-place-tanduk {
+    width: 60px;
+    height: auto;
+    background: none;
+    /* border: 2px solid cyan; */
+    display: flex;
+    justify-content: center;
+    transform: translate(120px, -155px);
+}
+
+.ultraman-tanduk {
+    width: 200px;
+    height: 200px;
+    background: hsl(0, 0%, 70%);
+    clip-path: ellipse(30% 50% at 50% 50%);
+
+}
+
+.ultraman-place-kuping {
+    width: 336px;
+    height: auto;
+    /* border: 2px solid cyan; */
+    transform: translate(-20px,-220px);
+    display: flex;
+    overflow: hidden;
+}
+
+.ultraman-kuping {
+    width: 120px;
+    height: 150px;
+    background: hsl(0, 0%, 70%);
+    clip-path: polygon(0 18%, 27% 6%, 28% 80%, 7% 71%, 0 52%);
+}
+
+.ultraman-kuping:last-child {
+    margin-left: auto;
+    transform: scaleX(-1);
+}
+
+.ultraman-place-mulut {
+    width: fit-content;
+    height: auto;
+    /* border: 2px solid cyan; */
+    transform: translate(75px, -240px);
+}
+
+.ultraman-mulut {
+    width: 150px;
+    height: 150px;
+    background: hsl(0, 0%, 70%);
+    clip-path: polygon(0 0, 100% 0, 75% 36%, 25% 36%);
+}
